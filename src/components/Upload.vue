@@ -1,14 +1,14 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
+  <div class="upload">
+    <h1>Upload</h1>
+    <!-- <h1>{{ msg }}</h1> -->
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Upload',
   props: {
-    msg: String
   }
 }
 </script>

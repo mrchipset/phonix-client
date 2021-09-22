@@ -1,17 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <sidebar-menu width="64px" :menu="menu" />       
+    <router-view></router-view>
+
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  // import HelloWorld from './components/HelloWorld.vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  export default {
+    name: 'App',
+    // components: {
+    //   HelloWorld
+    // },
+    data() {
+      return {
+        menu: [
+          {
+            href: '/',
+            icon: 'fa fa-user'
+          },
+          {
+            href: '/upload',
+            icon: 'fa fa-chart-area',
+          }
+        ]
+      }
+    }
   }
-}
 </script>
 
 <style>
