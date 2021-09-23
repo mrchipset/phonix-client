@@ -1,4 +1,4 @@
-# myproj
+# phonix-client
 
 ## Project setup
 ```

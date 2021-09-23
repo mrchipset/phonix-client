@@ -1,7 +1,7 @@
 <template>
 
   <div class = "imgGroup">
-    <img v-for="image in images" :src="image.url" @click="this.Show(image.url)" v-bind:key="image" width="96" height="96"/>
+    <img v-for="image in images" :src="image.url" @click="this.Show(image.url)" v-bind:key="image" width="128" height="128"/>
   </div>
 
   <div class= "btnGroup">
@@ -77,7 +77,7 @@ export default {
       this.currentPageId = this.pageId
       console.log('Get List Clicked.')
       const {net} = require('electron').remote;
-      const request = net.request(`https://phonix.mrchip.info/PictureItems/list/4/${pageId}`);
+      const request = net.request(`https://phonix.mrchip.info/PictureItems/list/9/${pageId}`);
       request.on('response', (response) => {
           console.log(`**statusCode:${response.statusCode}`);
           console.log(`**header:${JSON.stringify(response.headers)}`);
