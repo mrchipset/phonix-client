@@ -18,11 +18,11 @@
       return {
         menu: [
           {
-            href: '/',
+            href: '/upload',
             icon: 'fa fa-user'
           },
           {
-            href: '/upload',
+            href: '/list',
             icon: 'fa fa-chart-area',
           }
         ]
